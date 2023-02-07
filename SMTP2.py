@@ -16,7 +16,6 @@ def wait_250():
             graceful_exit = True
             return True
         else:
-            sys.stderr.write(line)
             return False
 
 def wait_354():
@@ -27,7 +26,6 @@ def wait_354():
             graceful_exit = True
             return True
         else:
-            sys.stderr.write(line)
             return False
 
 def quit_prg():
