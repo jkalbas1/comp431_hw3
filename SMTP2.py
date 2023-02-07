@@ -11,7 +11,7 @@ graceful_exit = False
 def wait_250():
     global graceful_exit
     for line in sys.stdin:
-        print(line, end="")
+        sys.stderr.write(line)
         if line[0:3] == "250":
             graceful_exit = True
             return True
@@ -22,7 +22,7 @@ def wait_250():
 def wait_354():
     global graceful_exit
     for line in sys.stdin:
-        print(line, end="")
+        sys.stderr.write(line)
         if line[0:3] == "354":
             graceful_exit = True
             return True
@@ -31,7 +31,7 @@ def wait_354():
             return False
 
 def quit_prg():
-    print("Quit")
+    sys.stdout.write("Quit\n")
     exit(1)
 
 
