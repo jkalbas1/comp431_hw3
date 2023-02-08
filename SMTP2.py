@@ -72,6 +72,6 @@ for line in read_file.readlines():
         quit_prg()
 
 if state == "data":
-    sys.stdout.write("\n.\n")
+    sys.stdout.write(".\n")
     wait_250()
 sys.stdout.write("QUIT\n")
