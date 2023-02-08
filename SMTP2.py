@@ -29,7 +29,7 @@ def wait_354():
             return False
 
 def quit_prg():
-    sys.stdout.write("Quit\n")
+    sys.stdout.write("QUIT\n")
     exit(1)
 
 
